@@ -2,7 +2,11 @@
   <section class="uk-container uk-container-xlarge container">
     <ul class="uk-child-width-1-2 uk-child-width-1-3@l uk-text-center game-pic" uk-grid>
       <li class="uk-transition-toggle" v-for="(item,index) in list" :key="index">
-        <a class="uk-transition-scale-up uk-transition-opaque" href="#modal-center" uk-toggle>
+        <a class="uk-transition-scale-up uk-transition-opaque" href="#modal-center" v-if="index < 1" uk-toggle>
+          <img class="uk-hidden-touch" :data-src="require('../assets/00' + index + '.jpg')" uk-img />
+          <img class="uk-hidden-notouch" :data-src="require('../assets/00' + index + '-m.jpg')" uk-img />
+        </a>
+        <a class v-else>
           <img class="uk-hidden-touch" :data-src="require('../assets/00' + index + '.jpg')" uk-img />
           <img class="uk-hidden-notouch" :data-src="require('../assets/00' + index + '-m.jpg')" uk-img />
         </a>
@@ -14,7 +18,6 @@
         <a class="uk-modal-close-default">
           <img src="@/assets/xx-btn.png" uk-img />
         </a>
-
         <div class="img-list">
           <ul class="uk-list uk-child-width-1-3 uk-child-width-1-4@l overflow-auto" uk-grid uk-overflow-auto>
             <li class="uk-animation-toggle" v-for="(item,index) in 16" :key="index">
