@@ -19,8 +19,8 @@
           <img src="@/assets/xx-btn.png" uk-img />
         </a>
         <div class="img-list">
-          <ul class="uk-list uk-child-width-1-3 uk-child-width-1-4@l overflow-auto" uk-grid uk-overflow-auto>
-            <li class="uk-animation-toggle" v-for="(item,index) in 16" :key="index">
+          <ul class="uk-list uk-child-width-1-4 overflow-auto" uk-grid uk-overflow-auto>
+            <li class="uk-animation-toggle" v-for="(item,index) in 16" :key="index+=1">
               <a class="uk-animation-slide-bottom-small" :href="require('@/assets/stickers/' + index + '.png')" target="_blank">
                 <img :data-src="require('@/assets/stickers/' + index + '.png')" uk-img />
               </a>
