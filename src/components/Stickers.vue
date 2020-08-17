@@ -4,7 +4,7 @@
       <li class="uk-transition-toggle" v-for="(item,index) in list" :key="index">
         <a class="uk-transition-scale-up uk-transition-opaque" href="#modal-center" uk-toggle>
           <img class="uk-hidden-touch" :data-src="require('../assets/00' + index + '.jpg')" uk-img />
-          <img class="uk-hidden-notouch" :src="require('../assets/00' + index + '-m.jpg')" uk-img />
+          <img class="uk-hidden-notouch" :data-src="require('../assets/00' + index + '-m.jpg')" uk-img />
         </a>
       </li>
     </ul>
@@ -17,84 +17,9 @@
 
         <div class="img-list">
           <ul class="uk-list uk-child-width-1-3 uk-child-width-1-4@l overflow-auto" uk-grid uk-overflow-auto>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/1.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/1.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/2.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/2.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/3.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/3.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/4.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/4.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/5.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/5.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/6.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/6.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/7.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/7.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/8.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/8.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/9.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/9.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/10.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/10.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/11.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/11.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/12.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/12.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/13.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/13.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/14.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/14.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/15.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/15.png" uk-img />
-              </a>
-            </li>
-            <li class="uk-animation-toggle">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/16.png')" target="_blank" rel="noopener noreferrer">
-                <img src="../assets/stickers/16.png" uk-img />
+            <li class="uk-animation-toggle" v-for="(item,index) in 16" :key="index">
+              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/' + index + '.png')" target="_blank">
+                <img :data-src="require('../assets/stickers/' + index + '.png')" uk-img />
               </a>
             </li>
           </ul>
