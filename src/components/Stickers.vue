@@ -12,21 +12,21 @@
     <div id="modal-center" class="uk-flex-top uk-text-center" uk-modal>
       <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
         <a class="uk-modal-close-default">
-          <img src="../assets/xx-btn.png" uk-img />
+          <img src="@/assets/xx-btn.png" uk-img />
         </a>
 
         <div class="img-list">
           <ul class="uk-list uk-child-width-1-3 uk-child-width-1-4@l overflow-auto" uk-grid uk-overflow-auto>
             <li class="uk-animation-toggle" v-for="(item,index) in 16" :key="index">
-              <a class="uk-animation-slide-bottom-small" :href="require('../assets/stickers/' + index + '.png')" target="_blank">
-                <img :data-src="require('../assets/stickers/' + index + '.png')" uk-img />
+              <a class="uk-animation-slide-bottom-small" :href="require('@/assets/stickers/' + index + '.png')" target="_blank">
+                <img :data-src="require('@/assets/stickers/' + index + '.png')" uk-img />
               </a>
             </li>
           </ul>
         </div>
         <div class="down-btn">
           <a href="https://rescdn.imtxwy.com/ak/stickers/down/stickers01.zip">
-            <img src="../assets/down-btn.png" uk-img />
+            <img :data-src="require('@/assets/down-btn.png')" uk-img />
           </a>
         </div>
       </div>
@@ -42,17 +42,9 @@ export default {
   data() {
     return {
       list: 6,
-      //Imgsrc: require("../ assets / 00" + index + ".jpg"),
     }
   },
   created() {
-    // for (var i = 0; i <= this.list; i++) {
-    //   this.Imgsrc = require("../assets/00" + i + ".jpg");
-    //   console.log(this.Imgsrc);
-    // }
-
-
-
   }
 };
 </script>
