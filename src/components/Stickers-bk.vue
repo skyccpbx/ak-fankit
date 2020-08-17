@@ -1,10 +1,40 @@
 <template>
   <section class="uk-container uk-container-xlarge container">
     <ul class="uk-child-width-1-2 uk-child-width-1-3@l uk-text-center game-pic" uk-grid>
-      <li class="uk-transition-toggle" v-for="(item,index) in list" :key="index">
+      <li class="uk-transition-toggle">
         <a class="uk-transition-scale-up uk-transition-opaque" href="#modal-center" uk-toggle>
-          <img class="uk-hidden-touch" :data-src="require('../assets/00' + index + '.jpg')" uk-img />
-          <img class="uk-hidden-notouch" :src="require('../assets/00' + index + '-m.jpg')" uk-img />
+          <img class="uk-hidden-touch" src="../assets/001.jpg" uk-img />
+          <img class="uk-hidden-notouch" src="../assets/001-m.jpg" uk-img />
+        </a>
+      </li>
+      <li>
+        <a>
+          <img class="uk-hidden-touch" src="../assets/000.jpg" uk-img />
+          <img class="uk-hidden-notouch" src="../assets/000-m.jpg" uk-img />
+        </a>
+      </li>
+      <li>
+        <a>
+          <img class="uk-hidden-touch" src="../assets/000.jpg" uk-img />
+          <img class="uk-hidden-notouch" src="../assets/000-m.jpg" uk-img />
+        </a>
+      </li>
+      <li>
+        <a>
+          <img class="uk-hidden-touch" src="../assets/000.jpg" uk-img />
+          <img class="uk-hidden-notouch" src="../assets/000-m.jpg" uk-img />
+        </a>
+      </li>
+      <li>
+        <a>
+          <img class="uk-hidden-touch" src="../assets/000.jpg" uk-img />
+          <img class="uk-hidden-notouch" src="../assets/000-m.jpg" uk-img />
+        </a>
+      </li>
+      <li>
+        <a>
+          <img class="uk-hidden-touch" src="../assets/000.jpg" uk-img />
+          <img class="uk-hidden-notouch" src="../assets/000-m.jpg" uk-img />
         </a>
       </li>
     </ul>
@@ -114,22 +144,7 @@
 <script>
 export default {
   name: 'Stickers',
-  data() {
-    return {
-      list: 6,
-      //Imgsrc: require("../ assets / 00" + index + ".jpg"),
-    }
-  },
-  created() {
-    // for (var i = 0; i <= this.list; i++) {
-    //   this.Imgsrc = require("../assets/00" + i + ".jpg");
-    //   console.log(this.Imgsrc);
-    // }
-
-
-
-  }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
